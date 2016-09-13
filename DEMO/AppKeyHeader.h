@@ -16,6 +16,14 @@
 #define SHARESDK_APPKEY @"15d4be87cbad5"
 #define SHARESDK_APPSECRET @"99c158f694cd841f7c317d30e8030b80"
 
+//新浪微博
 #define SINAWEIBO_APPKEY @""
 #define SINAWEIBO_APPSECRET @""
 #define SINAWEIBO_REIRECTURL @""
+
+//QQ
+#define QQ_APPKID @""
+#define QQ_APPKEY @""
+
+//WX
+#define WEIXIN_ID @""

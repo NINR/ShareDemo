@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		9D58186A1D86A26A00389EC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5818691D86A26A00389EC1 /* main.m */; };
 		9D58186D1D86A26A00389EC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D58186C1D86A26A00389EC1 /* AppDelegate.m */; };
-		9D5818701D86A26A00389EC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D58186F1D86A26A00389EC1 /* ViewController.m */; };
-		9D5818731D86A26A00389EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5818711D86A26A00389EC1 /* Main.storyboard */; };
 		9D5818751D86A26A00389EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5818741D86A26A00389EC1 /* Assets.xcassets */; };
 		9D5818781D86A26A00389EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5818761D86A26A00389EC1 /* LaunchScreen.storyboard */; };
 		9D5818831D86A26A00389EC1 /* DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5818821D86A26A00389EC1 /* DEMOTests.m */; };
@@ -36,7 +34,7 @@
 		9DBD79F01D86C858002BCB40 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBD79E21D86C857002BCB40 /* MOBFoundation.framework */; };
 		9DBD79F11D86C858002BCB40 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD79E31D86C857002BCB40 /* ShareSDK.bundle */; };
 		9DBD79F21D86C858002BCB40 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBD79E41D86C857002BCB40 /* ShareSDKConnector.framework */; };
-		9DD1DEFF1D86F558003371F9 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD1DEFE1D86F558003371F9 /* CustomButton.m */; };
+		9E80D1961D87C374000712D5 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E80D1951D87C374000712D5 /* MainTabBarController.m */; };
 		F9FF508C8874FA217EAFD7A5 /* libPods-DEMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD4FD2AC918D34C0630D789 /* libPods-DEMO.a */; };
 /* End PBXBuildFile section */
 
@@ -64,9 +62,6 @@
 		9D5818691D86A26A00389EC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D58186B1D86A26A00389EC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D58186C1D86A26A00389EC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9D58186E1D86A26A00389EC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9D58186F1D86A26A00389EC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9D5818721D86A26A00389EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D5818741D86A26A00389EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D5818771D86A26A00389EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5818791D86A26A00389EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,9 +107,9 @@
 		9DBD79E31D86C857002BCB40 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
 		9DBD79E41D86C857002BCB40 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		9DBD79F41D86CC3D002BCB40 /* AppKeyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppKeyHeader.h; sourceTree = "<group>"; };
-		9DD1DEFD1D86F558003371F9 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
-		9DD1DEFE1D86F558003371F9 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		9DD1DF001D86FE01003371F9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9E80D1941D87C374000712D5 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		9E80D1951D87C374000712D5 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		EF07D2AE2408B4EDAC182B02 /* Pods-DEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-DEMO/Pods-DEMO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,15 +197,8 @@
 		9D5818671D86A26900389EC1 /* DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				9D58186B1D86A26A00389EC1 /* AppDelegate.h */,
-				9D58186C1D86A26A00389EC1 /* AppDelegate.m */,
-				9D58186E1D86A26A00389EC1 /* ViewController.h */,
-				9D58186F1D86A26A00389EC1 /* ViewController.m */,
-				9DD1DEFD1D86F558003371F9 /* CustomButton.h */,
-				9DD1DEFE1D86F558003371F9 /* CustomButton.m */,
-				9D5818711D86A26A00389EC1 /* Main.storyboard */,
-				9D5818741D86A26A00389EC1 /* Assets.xcassets */,
-				9D5818761D86A26A00389EC1 /* LaunchScreen.storyboard */,
+				9E80D1981D87C3AC000712D5 /* Main */,
+				9E80D1971D87C398000712D5 /* Recourse */,
 				9DBD79F31D86CBE6002BCB40 /* Global */,
 				9DBD79C11D86C857002BCB40 /* ShareSDK */,
 				9D5818681D86A26900389EC1 /* Supporting Files */,
@@ -352,11 +340,31 @@
 		9DBD79F31D86CBE6002BCB40 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				9D58186B1D86A26A00389EC1 /* AppDelegate.h */,
+				9D58186C1D86A26A00389EC1 /* AppDelegate.m */,
+				9D5818761D86A26A00389EC1 /* LaunchScreen.storyboard */,
 				9D5818791D86A26A00389EC1 /* Info.plist */,
 				9DBD79F41D86CC3D002BCB40 /* AppKeyHeader.h */,
 				9DD1DF001D86FE01003371F9 /* PrefixHeader.pch */,
 			);
 			name = Global;
+			sourceTree = "<group>";
+		};
+		9E80D1971D87C398000712D5 /* Recourse */ = {
+			isa = PBXGroup;
+			children = (
+				9D5818741D86A26A00389EC1 /* Assets.xcassets */,
+			);
+			name = Recourse;
+			sourceTree = "<group>";
+		};
+		9E80D1981D87C3AC000712D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9E80D1941D87C374000712D5 /* MainTabBarController.h */,
+				9E80D1951D87C374000712D5 /* MainTabBarController.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,7 +477,6 @@
 				9D5818781D86A26A00389EC1 /* LaunchScreen.storyboard in Resources */,
 				9D5818751D86A26A00389EC1 /* Assets.xcassets in Resources */,
 				9DBD79EA1D86C858002BCB40 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
-				9D5818731D86A26A00389EC1 /* Main.storyboard in Resources */,
 				9DBD79EC1D86C858002BCB40 /* WeiboSDK.bundle in Resources */,
 				9DBD79EF1D86C858002BCB40 /* README.txt in Resources */,
 				9DBD79F11D86C858002BCB40 /* ShareSDK.bundle in Resources */,
@@ -546,10 +553,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DD1DEFF1D86F558003371F9 /* CustomButton.m in Sources */,
-				9D5818701D86A26A00389EC1 /* ViewController.m in Sources */,
 				9D58186D1D86A26A00389EC1 /* AppDelegate.m in Sources */,
 				9D58186A1D86A26A00389EC1 /* main.m in Sources */,
+				9E80D1961D87C374000712D5 /* MainTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,14 +591,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9D5818711D86A26A00389EC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D5818721D86A26A00389EC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9D5818761D86A26A00389EC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -698,8 +696,9 @@
 					"$(PROJECT_DIR)/DEMO/ShareSDK/Support/PlatformSDK/QQSDK",
 					"$(PROJECT_DIR)/DEMO/ShareSDK/Support/Required",
 				);
-				GCC_PREFIX_HEADER = /Users/a123/Desktop/DEMO/DEMO/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/bearclawr/GitHub/ShareDemo/DEMO/PrefixHeader.pch;
 				INFOPLIST_FILE = DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -724,8 +723,9 @@
 					"$(PROJECT_DIR)/DEMO/ShareSDK/Support/PlatformSDK/QQSDK",
 					"$(PROJECT_DIR)/DEMO/ShareSDK/Support/Required",
 				);
-				GCC_PREFIX_HEADER = /Users/a123/Desktop/DEMO/DEMO/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/bearclawr/GitHub/ShareDemo/DEMO/PrefixHeader.pch;
 				INFOPLIST_FILE = DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

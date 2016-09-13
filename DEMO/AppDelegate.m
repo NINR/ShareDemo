@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainTabBarController.h"
 
 //ShareSDK基本头文件名
 #import <ShareSDK/ShareSDK.h>
@@ -43,14 +44,21 @@
      */
     [ShareSDK registerApp:SHARESDK_APPKEY
           activePlatforms:@[
-                            @(SSDKPlatformTypeSinaWeibo)
+                            @(SSDKPlatformTypeSinaWeibo),
+                            @(SSDKPlatformTypeQQ),
+                            @(SSDKPlatformTypeWechat),
+                            @(SSDKPlatformTypeCopy)
                             ]
                  onImport:^(SSDKPlatformType platformType) {
                      switch (platformType) {
                          case SSDKPlatformTypeSinaWeibo:
                              [ShareSDKConnector connectWeibo:[WeiboSDK class]];
                              break;
-                             
+                         case SSDKPlatformTypeQQ:
+                             [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
+                             break;
+                         case SSDKPlatformTypeWechat:
+                             [ShareSDKConnector connectWeChat:[WXApi class]];
                          default:
                              break;
                      }
@@ -63,12 +71,26 @@
                                               redirectUri:SINAWEIBO_REIRECTURL
                                                  authType:SSDKAuthTypeBoth];
                       break;
-                      
+                  case SSDKPlatformTypeQQ:
+                      [appInfo SSDKSetupQQByAppId:QQ_APPKID
+                                           appKey:QQ_APPKEY
+                                         authType:SSDKAuthTypeBoth];
+                      break;
+                  case SSDKPlatformTypeWechat:
+                      [appInfo SSDKSetupWeChatByAppId:WEIXIN_ID
+                                            appSecret:SSDKAuthTypeBoth];
+                      break;
                   default:
                       break;
               }
     }];
     
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    MainTabBarController *mainTabBar=[[MainTabBarController alloc]init];
+    self.window.rootViewController=mainTabBar;
     return YES;
 }
 
