@@ -7,6 +7,9 @@
 //
 
 #import "MainTabBarController.h"
+#import "HomePageController.h"
+#import "PersonController.h"
+
 
 @interface MainTabBarController ()
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self createViewController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +28,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark- 创建子视图控制器对象
+- (void)createViewController{
+    HomePageController *homePageController =[[HomePageController alloc]init];
+    NSDictionary *homePageDic=[NSDictionary dictionaryWithTitleValue:@"首页"
+                                                           WithImage:[UIImage imageNamed:@"homepage_unselected.png"]
+                                                     WithSelectImage:[UIImage imageNamed:@"homepage_selected.png"]];
+    [self setupChildrenViewControllerOfItem:homePageController
+                             WithDictionary:homePageDic];
+    
+    PersonController *personController=[[PersonController alloc]init];
+    NSDictionary *personDic=[NSDictionary dictionaryWithTitleValue:@"个人中心"
+                                                         WithImage:[UIImage imageNamed:@"personal _unselected.png"]
+                                                   WithSelectImage:[UIImage imageNamed:@"personal _selected.png"]];
+    [self setupChildrenViewControllerOfItem:personController
+                             WithDictionary:personDic];
+}
+
+#pragma mark- 设置子视图控制的tabBarItem
+- (void)setupChildrenViewControllerOfItem:(UIViewController *)controller WithDictionary:(NSDictionary *)itemDic{
+    UINavigationController *navigationController=[[UINavigationController alloc]initWithRootViewController:controller];
+    navigationController.tabBarItem.title=[itemDic objectForKey:@"title"];
+    navigationController.tabBarItem.image=[itemDic objectForKey:@"image"];
+    navigationController.tabBarItem.selectedImage=[itemDic objectForKey:@"selectImage"];
+    [self addChildViewController:navigationController];
+}
 /*
 #pragma mark - Navigation
 
